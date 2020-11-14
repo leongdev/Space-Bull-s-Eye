@@ -16,6 +16,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // Fires a method when the screen loads
+    override func viewDidLayoutSubviews() {
+        
+        mainSlider.setValue(50, animated: true)
+        super.viewDidLayoutSubviews()
+    }
+
+    @IBOutlet weak var mainSlider: UISlider!
+    
     @IBAction func showAlert(){
         
         let alert = UIAlertController(
