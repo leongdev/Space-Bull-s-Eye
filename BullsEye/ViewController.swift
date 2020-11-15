@@ -5,22 +5,19 @@
 //  Created by Leon on 12/11/20.
 //
 
+//Remember to credit the artist on README
+//https://br.freepik.com/vectorpouch
+
 import UIKit
 
 class ViewController: UIViewController {
 
-    var currentValue: Int = 50
+    var currentValue: Int = 0
     
     override func viewDidLoad() {
+        setSliderValue( Int.random(in: 1...100))
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-
-    // Fires a method when the screen loads
-    override func viewDidLayoutSubviews() {
-        
-        mainSlider.setValue(50, animated: true)
-        super.viewDidLayoutSubviews()
     }
 
     @IBOutlet weak var mainSlider: UISlider!
@@ -34,7 +31,7 @@ class ViewController: UIViewController {
         )
         
         let action = UIAlertAction(
-            title: "Awesome",
+            title: "ok",
             style: .default,
             handler: nil
         )
@@ -45,6 +42,11 @@ class ViewController: UIViewController {
     
     @IBAction func sliderMoved(_ slider:UISlider){
         currentValue = Int(slider.value)
+    }
+    
+    func setSliderValue(_ value: Int){
+        currentValue = value
+        mainSlider.setValue(Float(value), animated: true)
     }
     
 }
