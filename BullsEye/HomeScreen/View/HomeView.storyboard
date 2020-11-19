@@ -10,7 +10,7 @@
         <!--Home View Controller-->
         <scene sceneID="8dd-0P-FNc">
             <objects>
-                <viewController storyboardIdentifier="home_VC" id="rfd-Vd-vFi" customClass="HomeViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="rfd-Vd-vFi" customClass="HomeViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mw1-17-ARI">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,29 +18,66 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Sv2-SP-aPP">
                                 <rect key="frame" x="-771" y="-432" width="2209" height="1239"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5x-iT-ZJD">
-                                <rect key="frame" x="298" y="172" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go to Two"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5x-iT-ZJD">
+                                <rect key="frame" x="272.5" y="238.5" width="122" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="DSg-Rt-Ltx"/>
+                                    <constraint firstAttribute="height" constant="58" id="hUz-ne-AbU"/>
+                                </constraints>
+                                <state key="normal" image="Play Button"/>
                                 <connections>
-                                    <action selector="onPressNext" destination="rfd-Vd-vFi" eventType="touchUpInside" id="D6h-N8-ZPw"/>
+                                    <action selector="onPressStart" destination="rfd-Vd-vFi" eventType="touchUpInside" id="o86-4l-Lfy"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cff-Jn-jza">
+                                <rect key="frame" x="180" y="46" width="306" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="Gee-J1-EeG"/>
+                                    <constraint firstAttribute="width" constant="306" id="cDo-z8-msI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planet A" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-eS-gdI">
+                                <rect key="frame" x="-118.5" y="232" width="304" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="311" id="kTv-lj-OHY"/>
+                                    <constraint firstAttribute="width" constant="304" id="udS-Yj-vX7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planet B" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-sv-yVk">
+                                <rect key="frame" x="542" y="-103" width="183" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="1lp-HC-5Rx"/>
+                                    <constraint firstAttribute="width" constant="183" id="Klm-6R-LFz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Z9-Kn-7Y4"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cff-Jn-jza" firstAttribute="leading" secondItem="8Z9-Kn-7Y4" secondAttribute="leading" constant="180" id="8zI-KR-bd3"/>
+                            <constraint firstItem="d5x-iT-ZJD" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" id="GOY-GG-UHT"/>
+                            <constraint firstItem="cff-Jn-jza" firstAttribute="top" secondItem="8Z9-Kn-7Y4" secondAttribute="top" constant="46" id="HtH-5F-hzb"/>
+                            <constraint firstItem="Aau-sv-yVk" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" constant="300" id="NYw-Uu-nNf"/>
                             <constraint firstItem="Sv2-SP-aPP" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" id="OQy-nA-H20"/>
+                            <constraint firstItem="d5x-iT-ZJD" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="80" id="YDu-hm-Bbc"/>
+                            <constraint firstItem="fvv-eS-gdI" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" constant="-300" id="ZwL-0J-Ey9"/>
+                            <constraint firstItem="fvv-eS-gdI" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="200" id="dg3-GD-KvR"/>
+                            <constraint firstItem="8Z9-Kn-7Y4" firstAttribute="trailing" secondItem="cff-Jn-jza" secondAttribute="trailing" constant="181" id="hxq-75-ZJu"/>
                             <constraint firstItem="Sv2-SP-aPP" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" id="nfx-Ki-p6X"/>
+                            <constraint firstItem="Aau-sv-yVk" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="-200" id="s5R-lo-whJ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjy-V7-6Ps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-216" y="89"/>
+            <point key="canvasLocation" x="-216.34182908545728" y="88.799999999999997"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="2208.5" height="1239"/>
+        <image name="Logo" width="877.5" height="607.5"/>
+        <image name="Planet A" width="576" height="576.5"/>
+        <image name="Planet B" width="771" height="772"/>
+        <image name="Play Button" width="498.5" height="238"/>
     </resources>
 </document>

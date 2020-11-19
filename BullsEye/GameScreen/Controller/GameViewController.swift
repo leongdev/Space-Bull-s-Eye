@@ -10,8 +10,11 @@
 
 import UIKit
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController, Storyboarded {
+    static func instantiate() -> Self{ return GameViewController() as! Self}
+    
+    weak var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
        // setSliderValue( Int.random(in: 1...100))
         super.viewDidLoad()
@@ -34,7 +37,10 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var sortLabel: UILabel!
     
-    @IBAction func onPressHome(){}
+    @IBAction func onPressHome(){
+        print("Press HOME")
+        coordinator?.goHomeScreen()
+    }
     
     @IBAction func onPressPause(){}
 }
