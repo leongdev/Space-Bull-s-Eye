@@ -11,12 +11,12 @@
         <scene sceneID="8dd-0P-FNc">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="rfd-Vd-vFi" customClass="HomeViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mw1-17-ARI">
+                    <view key="view" contentMode="scaleToFill" id="Mw1-17-ARI" customClass="GradientView" customModule="BullsEye" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Sv2-SP-aPP">
-                                <rect key="frame" x="-771" y="-432" width="2209" height="1239"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="T0v-mQ-ijc">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5x-iT-ZJD">
                                 <rect key="frame" x="272.5" y="238.5" width="122" height="58"/>
@@ -37,14 +37,14 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planet A" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-eS-gdI">
-                                <rect key="frame" x="-118.5" y="232" width="304" height="311"/>
+                                <rect key="frame" x="-418.5" y="432" width="304" height="311"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="311" id="kTv-lj-OHY"/>
                                     <constraint firstAttribute="width" constant="304" id="udS-Yj-vX7"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planet B" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-sv-yVk">
-                                <rect key="frame" x="542" y="-103" width="183" height="181"/>
+                                <rect key="frame" x="842" y="-303" width="183" height="181"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="181" id="1lp-HC-5Rx"/>
                                     <constraint firstAttribute="width" constant="183" id="Klm-6R-LFz"/>
@@ -54,19 +54,37 @@
                         <viewLayoutGuide key="safeArea" id="8Z9-Kn-7Y4"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="T0v-mQ-ijc" firstAttribute="bottom" secondItem="8Z9-Kn-7Y4" secondAttribute="bottom" id="1hY-xI-U5g"/>
+                            <constraint firstItem="T0v-mQ-ijc" firstAttribute="trailing" secondItem="8Z9-Kn-7Y4" secondAttribute="trailing" id="3xr-g8-ehc"/>
+                            <constraint firstItem="T0v-mQ-ijc" firstAttribute="leading" secondItem="8Z9-Kn-7Y4" secondAttribute="leading" id="8fP-ZF-1B3"/>
                             <constraint firstItem="cff-Jn-jza" firstAttribute="leading" secondItem="8Z9-Kn-7Y4" secondAttribute="leading" constant="180" id="8zI-KR-bd3"/>
                             <constraint firstItem="d5x-iT-ZJD" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" id="GOY-GG-UHT"/>
                             <constraint firstItem="cff-Jn-jza" firstAttribute="top" secondItem="8Z9-Kn-7Y4" secondAttribute="top" constant="46" id="HtH-5F-hzb"/>
-                            <constraint firstItem="Aau-sv-yVk" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" constant="300" id="NYw-Uu-nNf"/>
-                            <constraint firstItem="Sv2-SP-aPP" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" id="OQy-nA-H20"/>
+                            <constraint firstItem="Aau-sv-yVk" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" constant="600" id="NYw-Uu-nNf"/>
                             <constraint firstItem="d5x-iT-ZJD" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="80" id="YDu-hm-Bbc"/>
-                            <constraint firstItem="fvv-eS-gdI" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" constant="-300" id="ZwL-0J-Ey9"/>
-                            <constraint firstItem="fvv-eS-gdI" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="200" id="dg3-GD-KvR"/>
+                            <constraint firstItem="fvv-eS-gdI" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" constant="-600" id="ZwL-0J-Ey9"/>
+                            <constraint firstItem="fvv-eS-gdI" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="400" id="dg3-GD-KvR"/>
+                            <constraint firstItem="T0v-mQ-ijc" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" id="gl7-3L-rDN"/>
+                            <constraint firstItem="T0v-mQ-ijc" firstAttribute="centerX" secondItem="Mw1-17-ARI" secondAttribute="centerX" id="hm6-8K-if3"/>
                             <constraint firstItem="8Z9-Kn-7Y4" firstAttribute="trailing" secondItem="cff-Jn-jza" secondAttribute="trailing" constant="181" id="hxq-75-ZJu"/>
-                            <constraint firstItem="Sv2-SP-aPP" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" id="nfx-Ki-p6X"/>
-                            <constraint firstItem="Aau-sv-yVk" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="-200" id="s5R-lo-whJ"/>
+                            <constraint firstItem="T0v-mQ-ijc" firstAttribute="top" secondItem="8Z9-Kn-7Y4" secondAttribute="top" id="mmg-mI-m7b"/>
+                            <constraint firstItem="Aau-sv-yVk" firstAttribute="centerY" secondItem="Mw1-17-ARI" secondAttribute="centerY" constant="-400" id="s5R-lo-whJ"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                <color key="value" red="0.30980392156862746" green="0.0" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="planetOneHorizontalConstraint" destination="ZwL-0J-Ey9" id="XlB-B3-oYX"/>
+                        <outlet property="planetOneVerticalConstraint" destination="dg3-GD-KvR" id="dpe-hT-ApF"/>
+                        <outlet property="planetTwoHorizontalConstraint" destination="NYw-Uu-nNf" id="8hU-Lc-80U"/>
+                        <outlet property="planetTwoVerticalConstraint" destination="s5R-lo-whJ" id="wyd-To-Uql"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjy-V7-6Ps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

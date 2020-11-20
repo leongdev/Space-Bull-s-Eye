@@ -38,7 +38,6 @@ class GameViewController: UIViewController, Storyboarded {
     @IBOutlet weak var sortLabel: UILabel!
     
     @IBAction func onPressHome(){
-        print("Press HOME")
         coordinator?.goHomeScreen()
     }
     
