@@ -13,11 +13,13 @@ import UIKit
 class GameViewController: UIViewController, Storyboarded {
     static func instantiate() -> Self{ return GameViewController() as! Self}
     
+    var gameManager = GameManager()
     weak var coordinator: MainCoordinator?
     
     override func viewDidLoad() {
        // setSliderValue( Int.random(in: 1...100))
         super.viewDidLoad()
+        gameManager.fireTime(timeSlider: mainSlider)
         // Do any additional setup after loading the view.
     }
 
@@ -33,13 +35,16 @@ class GameViewController: UIViewController, Storyboarded {
         }
     }
     
+
     @IBOutlet weak var pointsLabel: UILabel!
-    
     @IBOutlet weak var sortLabel: UILabel!
     
     @IBAction func onPressHome(){
         coordinator?.goHomeScreen()
     }
     
-    @IBAction func onPressPause(){}
+    @IBAction func onPressPause(){
+        gameManager.stopTimer()
+        gameManager.showScoreModal(gameViewController: self)
+    }
 }

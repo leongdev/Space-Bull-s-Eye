@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController, Storyboarded {
+    
     var onbjectsAnimator = ObjectsAnimator()
     static func instantiate() -> Self{ return HomeViewController() as! Self}
 

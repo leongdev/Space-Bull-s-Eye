@@ -10,7 +10,7 @@ import UIKit
 
 
 struct ObjectsAnimator {
-   
+    
     func changeConstraintPositions(
         layoutView view: UIView,
         imageOneHorizontalConstraint imgOneHorizontal: NSLayoutConstraint,
@@ -33,4 +33,5 @@ struct ObjectsAnimator {
             },
             completion: nil)
     }
+
 }

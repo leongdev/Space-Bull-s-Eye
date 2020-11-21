@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rfd-Vd-vFi">
-    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="rfd-Vd-vFi" customClass="HomeViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mw1-17-ARI" customClass="GradientView" customModule="BullsEye" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="T0v-mQ-ijc">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5x-iT-ZJD">
-                                <rect key="frame" x="272.5" y="238.5" width="122" height="58"/>
+                                <rect key="frame" x="307" y="258" width="122" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="DSg-Rt-Ltx"/>
                                     <constraint firstAttribute="height" constant="58" id="hUz-ne-AbU"/>
@@ -30,21 +30,21 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cff-Jn-jza">
-                                <rect key="frame" x="180" y="46" width="306" height="162"/>
+                                <rect key="frame" x="180" y="46" width="375" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="Gee-J1-EeG"/>
                                     <constraint firstAttribute="width" constant="306" id="cDo-z8-msI"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planet A" translatesAutoresizingMaskIntoConstraints="NO" id="fvv-eS-gdI">
-                                <rect key="frame" x="-418.5" y="432" width="304" height="311"/>
+                                <rect key="frame" x="-384" y="451.66666666666674" width="304" height="311"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="311" id="kTv-lj-OHY"/>
                                     <constraint firstAttribute="width" constant="304" id="udS-Yj-vX7"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Planet B" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-sv-yVk">
-                                <rect key="frame" x="842" y="-303" width="183" height="181"/>
+                                <rect key="frame" x="876.66666666666663" y="-283.66666666666669" width="182.99999999999989" height="181"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="181" id="1lp-HC-5Rx"/>
                                     <constraint firstAttribute="width" constant="183" id="Klm-6R-LFz"/>
@@ -92,10 +92,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="2208.5" height="1239"/>
-        <image name="Logo" width="877.5" height="607.5"/>
-        <image name="Planet A" width="576" height="576.5"/>
+        <image name="Background" width="2208.333251953125" height="1238.6666259765625"/>
+        <image name="Logo" width="877.33331298828125" height="607.66668701171875"/>
+        <image name="Planet A" width="576" height="576"/>
         <image name="Planet B" width="771" height="772"/>
-        <image name="Play Button" width="498.5" height="238"/>
+        <image name="Play Button" width="498.33334350585938" height="237.66667175292969"/>
     </resources>
 </document>
