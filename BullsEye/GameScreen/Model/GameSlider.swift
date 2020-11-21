@@ -10,9 +10,7 @@ import UIKit
 
 class GameSlider {
     
-    let sliderSpeed: Double = 0.005
-    var sliderValue: Int = 0
-    
+    let sliderSpeed: Double = 0.003
     var moveDirection: Bool = false
     var timer: Timer!
     var gameSlider: UISlider! = nil
@@ -28,7 +26,7 @@ class GameSlider {
     
     @objc func changeSliderPosition(){
         moveDirection ? moveFoward(): moveBackwards()
-        gameSlider.value = Float(sliderValue)
+        gameSlider.value = Float(GameManager.sliderValue)
     }
     
     func changeDirection(){
@@ -36,17 +34,21 @@ class GameSlider {
     }
     
     func moveFoward() {
-        sliderValue += 1
-        if(sliderValue >= 100){
+        GameManager.sliderValue += 1
+        if(GameManager.sliderValue >= 100){
             changeDirection()
         }
     }
     
     func moveBackwards(){
-        sliderValue -= 1
-        if(sliderValue <= 0){
+        GameManager.sliderValue -= 1
+        if(GameManager.sliderValue <= 0){
             changeDirection()
         }
+    }
+    
+    func getCurrentSlideValue() -> Int{
+        return GameManager.sliderValue
     }
     
 }

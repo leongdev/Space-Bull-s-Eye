@@ -51,7 +51,7 @@
                                     <action selector="onPressAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="PPu-Wi-SF1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-eu-yY8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-eu-yY8">
                                 <rect key="frame" x="567" y="26" width="61" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="Xc2-JT-taT"/>

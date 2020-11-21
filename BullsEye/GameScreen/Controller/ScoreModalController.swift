@@ -8,7 +8,6 @@
 import UIKit
 
 class ScoreModalController: UIViewController {
-   
     var gameManager = GameManager()
 
     override func viewDidLoad() {
@@ -24,6 +23,7 @@ class ScoreModalController: UIViewController {
     @IBOutlet weak var playerPositionLabel: UILabel!
     
     @IBAction func onCloseModal(){
+        GameViewController.sortTitleLabel?.text = Strings.GameScreen.startGameInfoLabel
         self.dismiss(animated: true, completion: nil)
     }
     

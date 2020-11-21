@@ -11,16 +11,31 @@
 import UIKit
 
 class GameViewController: UIViewController, Storyboarded {
+    
     static func instantiate() -> Self{ return GameViewController() as! Self}
+    static var pointLavel:UILabel? = nil
+    static var sortTitleLabel:UILabel? = nil
     
     var gameManager = GameManager()
     weak var coordinator: MainCoordinator?
     
+
+    
     override func viewDidLoad() {
        // setSliderValue( Int.random(in: 1...100))
         super.viewDidLoad()
-        sortLabel.text = Strings.GameScreen.startGameInfoLabel
+        GameViewController.pointLavel = pointsLabel
+        initializeLabel()
         // Do any additional setup after loading the view.
+    }
+    
+    func initializeLabel(){
+        GameViewController.sortTitleLabel = sortLabel
+        sortLabel.text = Strings.GameScreen.startGameInfoLabel
+        let defaults = UserDefaults.standard
+        if let stringOne = defaults.string(forKey: GameManager.pointsKey) {
+            pointsLabel.text = stringOne
+        }
     }
 
     @IBOutlet weak var mainSlider: UISlider!{
@@ -43,6 +58,6 @@ class GameViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func onPressAction(){
-        gameManager.onPressActionButton(mainSlider, actionButton, self)
+        gameManager.onPressActionButton(mainSlider, actionButton, self, sortLabel)
     }
 }
