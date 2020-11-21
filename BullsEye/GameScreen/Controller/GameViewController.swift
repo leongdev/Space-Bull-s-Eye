@@ -19,7 +19,7 @@ class GameViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
        // setSliderValue( Int.random(in: 1...100))
         super.viewDidLoad()
-        gameManager.fireTime(timeSlider: mainSlider)
+        sortLabel.text = Strings.GameScreen.startGameInfoLabel
         // Do any additional setup after loading the view.
     }
 
@@ -31,11 +31,10 @@ class GameViewController: UIViewController, Storyboarded {
             mainSlider.setThumbImage(thumbImageNormal, for: .normal)
             mainSlider.setMinimumTrackImage(UIImage(named: "Slider_Minimum"), for: .normal)
             mainSlider.setMaximumTrackImage(UIImage(named: "Slider_Maximum"), for: .normal)
-            
         }
     }
     
-
+    @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet weak var sortLabel: UILabel!
     
@@ -43,8 +42,7 @@ class GameViewController: UIViewController, Storyboarded {
         coordinator?.goHomeScreen()
     }
     
-    @IBAction func onPressPause(){
-        gameManager.stopTimer()
-        gameManager.showScoreModal(gameViewController: self)
+    @IBAction func onPressAction(){
+        gameManager.onPressActionButton(mainSlider, actionButton, self)
     }
 }

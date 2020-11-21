@@ -9,31 +9,22 @@ import Foundation
 import UIKit
 
 class GameManager {
+    let gameSlider = GameSlider()
+    var isGameStarted: Bool = false
     
-    var timer: Timer!
-    var sliderValue: Int = 0
-    var timeSlider: UISlider! = nil
-    
-    //MARK: - Game Slider
-    func fireTime(timeSlider slider: UISlider){
-        timeSlider = slider
-        timer = Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(addCounterValue), userInfo: nil, repeats: true)
-    }
-    
-    @objc func addCounterValue(){
-        sliderValue += 1
+    //MARK: - Game Manager
+    func onPressActionButton(_ slider: UISlider,_ startButton: UIButton,_ viewController: GameViewController){
         
-        if(sliderValue >= 100){
-            sliderValue = 0
+        if(isGameStarted){
+            startButton.setImage(GameImages.GameScreen.playButton, for: .normal)
+            showScoreModal(gameViewController: viewController)
+            gameSlider.stopSlider()
+            isGameStarted = false
+        }else{
+            startButton.setImage(GameImages.GameScreen.pauseButton, for: .normal)
+            gameSlider.startMovingSlider(gameSlider: slider)
+            isGameStarted = true
         }
-        
-        timeSlider.value = Float(sliderValue)
-        
-        print(sliderValue)
-    }
-    
-    func stopTimer(){
-        timer.invalidate()
     }
     
     //MARK: - Score Modal

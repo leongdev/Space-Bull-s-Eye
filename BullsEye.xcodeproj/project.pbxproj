@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3584FC692568B9C80017AFE0 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584FC682568B9C80017AFE0 /* Strings.swift */; };
+		3584FC6E2568BA090017AFE0 /* GameImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584FC6D2568BA090017AFE0 /* GameImages.swift */; };
+		3584FC762568BDD30017AFE0 /* GameSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584FC752568BDD30017AFE0 /* GameSlider.swift */; };
+		3584FC812568C4710017AFE0 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584FC802568C4710017AFE0 /* GameScore.swift */; };
 		3588080825673E83001712CC /* ObjectsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588080725673E83001712CC /* ObjectsAnimator.swift */; };
 		3588081325689283001712CC /* ScoreModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588081225689282001712CC /* ScoreModalController.swift */; };
 		3588081B25689CB8001712CC /* ScoreModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3588081A25689CB8001712CC /* ScoreModal.storyboard */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3584FC682568B9C80017AFE0 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		3584FC6D2568BA090017AFE0 /* GameImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameImages.swift; sourceTree = "<group>"; };
+		3584FC752568BDD30017AFE0 /* GameSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSlider.swift; sourceTree = "<group>"; };
+		3584FC802568C4710017AFE0 /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
 		3588080725673E83001712CC /* ObjectsAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsAnimator.swift; sourceTree = "<group>"; };
 		3588081225689282001712CC /* ScoreModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModalController.swift; sourceTree = "<group>"; };
 		3588081A25689CB8001712CC /* ScoreModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoreModal.storyboard; sourceTree = "<group>"; };
@@ -102,6 +110,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3584FC662568B9AB0017AFE0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3584FC682568B9C80017AFE0 /* Strings.swift */,
+				3584FC6D2568BA090017AFE0 /* GameImages.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		35BA5DDB2563713C0065B510 /* GameScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				35BA5DD2256363B70065B510 /* GameManager.swift */,
+				3584FC752568BDD30017AFE0 /* GameSlider.swift */,
+				3584FC802568C4710017AFE0 /* GameScore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +214,7 @@
 		35D9C909255E0C59001D3B40 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				3584FC662568B9AB0017AFE0 /* Constants */,
 				350CA6002566DC42002D37EB /* Extensions */,
 				35F122442565754000B1761E /* Navigation */,
 				35BA5DDB2563713C0065B510 /* GameScreen */,
@@ -368,7 +388,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				35BA5E06256374F30065B510 /* HomeViewController.swift in Sources */,
+				3584FC6E2568BA090017AFE0 /* GameImages.swift in Sources */,
+				3584FC692568B9C80017AFE0 /* Strings.swift in Sources */,
 				3594B3FD2565F33D001881F0 /* MainCoordinator.swift in Sources */,
+				3584FC762568BDD30017AFE0 /* GameSlider.swift in Sources */,
 				3588081325689283001712CC /* ScoreModalController.swift in Sources */,
 				35D9C90F255E0C59001D3B40 /* GameViewController.swift in Sources */,
 				3594B3F32565EF32001881F0 /* Coordinator.swift in Sources */,
@@ -376,6 +399,7 @@
 				3588080825673E83001712CC /* ObjectsAnimator.swift in Sources */,
 				35D9C90B255E0C59001D3B40 /* AppDelegate.swift in Sources */,
 				35F4CE4C25672B7600A4ED2A /* GradiendView.swift in Sources */,
+				3584FC812568C4710017AFE0 /* GameScore.swift in Sources */,
 				35BA5DD3256363B70065B510 /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

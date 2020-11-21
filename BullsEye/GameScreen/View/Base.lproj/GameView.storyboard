@@ -46,31 +46,11 @@
                                     <constraint firstAttribute="height" constant="65" id="aKy-7d-hvW"/>
                                     <constraint firstAttribute="width" constant="117" id="ohN-vU-tkJ"/>
                                 </constraints>
-                                <state key="normal" image="Pause Button"/>
+                                <state key="normal" image="Play Button"/>
                                 <connections>
-                                    <action selector="onPressPause" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kr5-LC-Jkv"/>
+                                    <action selector="onPressAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="PPu-Wi-SF1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop at:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-QL-qtB">
-                                <rect key="frame" x="237" y="80.5" width="113" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="CKD-Z9-bj4"/>
-                                    <constraint firstAttribute="height" constant="54" id="m5E-IZ-vnH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eO2-Bf-UEk">
-                                <rect key="frame" x="346.5" y="80.5" width="74" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="B48-EW-M0h"/>
-                                    <constraint firstAttribute="width" constant="74" id="t4m-XK-6Tu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-eu-yY8">
                                 <rect key="frame" x="567" y="26" width="61" height="34"/>
                                 <constraints>
@@ -81,17 +61,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop at:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-QL-qtB">
+                                <rect key="frame" x="208.5" y="80.5" width="250" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="88u-f6-uzg"/>
+                                    <constraint firstAttribute="height" constant="54" id="TM9-JL-wJd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.15618804097175598" green="0.06747058779001236" blue="0.28696182370185852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7ze-QL-qtB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-40" id="4Eb-Bw-VYR"/>
-                            <constraint firstItem="eO2-Bf-UEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="7Yb-OQ-jFP"/>
+                            <constraint firstItem="7ze-QL-qtB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ex-6B-phW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tlc-eu-yY8" secondAttribute="trailing" constant="39" id="7aa-p6-xe9"/>
                             <constraint firstItem="YDU-KZ-bd8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8ts-qP-Aqa"/>
-                            <constraint firstItem="eO2-Bf-UEk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="9al-cr-Pcb"/>
                             <constraint firstItem="WQm-Ug-A1q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="C8t-YX-ocf"/>
-                            <constraint firstItem="7ze-QL-qtB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="Ohy-eL-SdH"/>
+                            <constraint firstItem="7ze-QL-qtB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="Ke8-YT-YDg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u0O-yz-NPq" secondAttribute="trailing" constant="20" id="UWC-8d-PY6"/>
                             <constraint firstItem="YDU-KZ-bd8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ZpL-yI-0Dp"/>
                             <constraint firstItem="Tlc-eu-yY8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="gEv-jz-zjd"/>
@@ -110,19 +98,20 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="actionButton" destination="WQm-Ug-A1q" id="VB2-f7-mGd"/>
                         <outlet property="mainSlider" destination="1MK-nZ-PBd" id="Zfy-qT-2Oh"/>
                         <outlet property="pointsLabel" destination="Tlc-eu-yY8" id="hNC-I6-5KP"/>
-                        <outlet property="sortLabel" destination="eO2-Bf-UEk" id="H0C-KL-vJh"/>
+                        <outlet property="sortLabel" destination="7ze-QL-qtB" id="qyH-vp-tj3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="148"/>
+            <point key="canvasLocation" x="-167.76611694152925" y="148"/>
         </scene>
     </scenes>
     <resources>
         <image name="Home Button" width="142" height="117.5"/>
-        <image name="Pause Button" width="466" height="222.5"/>
+        <image name="Play Button" width="465.5" height="222.5"/>
         <image name="Score Counter" width="522.5" height="185.5"/>
     </resources>
 </document>
